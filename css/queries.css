@@ -1,0 +1,405 @@
+/* BELOW 1700px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 1860px) {
+
+    .main-nav-list {
+        gap: 3rem;
+    }
+
+    .circle {
+        width: 500px;
+    }
+
+    .step1 {
+        margin-bottom: 26px;
+    }
+
+    .step4 {
+        margin-bottom: 30px;
+    }
+
+    .step6 {
+        margin-bottom: 42px;
+    }
+
+    .step9 {
+        margin-bottom: 25px;
+    }
+
+}
+
+@media (max-width: 1770px) {
+
+    .whyus-circle {
+        justify-content: space-around;
+    }
+
+    .circle-img {
+        display: none;
+    }
+
+    .step1,
+    .step2,
+    .step3,
+    .step4,
+    .step5,
+    .step6,
+    .step7,
+    .step8,
+    .step9,
+    .step10 {
+        margin-left: 0px;
+        margin-bottom: 40px;
+    }
+
+    .team-meeting {
+        margin-right: 0rem;
+    }
+
+    /* .whyus-circle-r {
+        margin-top: 30px;
+    } */
+
+}
+
+@media (max-width: 1630px) {
+    .main-nav-list {
+        gap: 3rem;
+    }
+
+    .checking-test-title {
+        height: 290px;
+    }
+
+    h1 {
+        font-size: 6.5rem;
+    }
+
+    .planet {
+        padding-top: 0rem;
+        z-index: 2;
+        width: 50%;
+        height: 50%;
+    }
+
+    .spot {
+        width: 60%;
+        left: 78.5%;
+        top: 40%;
+    }
+
+    .social-links {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1430px) {
+
+    .whyus-circle-r {
+        margin-top: 80px;
+    }
+
+    .footer-startaps-img {
+        padding-right: 75px;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: stretch;
+    }
+
+    .grid--4-cols-footer {
+        grid-template-columns: 27.4% 26% 20.5% 26%;
+    }
+
+    .header {
+        padding: 0 4rem;
+    }
+
+    .main-nav-list {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 1370px) {
+
+    .whyus-circle-r {
+        margin-top: 80px;
+    }
+
+    .whyus-circle-s {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .step-block {
+        max-width: 824px;
+        text-align: left;
+        flex-direction: row-reverse;
+        gap: 60px;
+    }
+
+    .step-block-right {
+        max-width: 824px;
+        gap: 60px;
+    }
+
+    .whyus-circle-r {
+        margin-top: 0px;
+    }
+
+
+
+}
+
+@media (max-width: 1270px) {
+
+
+    .hero-block {
+        gap: 10px;
+    }
+
+    .checking-test-title {
+        max-width: 100%;
+    }
+
+    .grid--2-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .best-company {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .grid--4-cols-footer {
+        grid-template-columns: 50% 50%;
+    }
+
+    .footer-startaps {
+        justify-self: center;
+        margin-left: 0;
+    }
+
+    .footer-callme,
+    .footer-visitus {
+        margin: 50px 0px;
+    }
+
+    .main-nav-list {
+        gap: 1.5rem;
+    }
+
+    .contact-info :first-child {
+        font-size: 1.2rem;
+    }
+
+    .contact-info :last-child {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 1145px) {
+    .grid--3-cols {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-info {
+        display: none;
+    }
+
+    .main-nav-list {
+        gap: 1rem;
+    }
+
+    .btn-mobile-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .grid--3-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .planet,
+    .spot {
+        display: none;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .btn-mobile-nav {
+        border: none;
+        background: none;
+        cursor: pointer;
+        display: block;
+        margin-left: auto;
+        z-index: 9999;
+    }
+
+    .icon-mobile-nav {
+        height: 4.8rem;
+        width: 4.8rem;
+        color: #333;
+    }
+
+    .icon-mobile-nav[name="close-outline"] {
+        display: none;
+    }
+
+    .main-nav {
+        background-color: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+        transition: all 0.5s ease-in;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /*HIDE NAVIGATION*/
+        /* display: none; */
+        opacity: 0;
+
+        pointer-events: none;
+
+        visibility: hidden;
+        z-index: 3;
+    }
+
+    .main-nav-list {
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-size: 3rem;
+
+    }
+
+    .nav-open .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    .nav-open .icon-mobile-nav[name="close-outline"] {
+        display: block;
+    }
+
+    .nav-open .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 760px) {
+    .logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        margin-top: 28px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+/*MOBILE 710px */
+
+@media (max-width: 710px) {
+    html {
+        font-size: 50%;
+        overflow-x: hidden;
+    }
+
+    .grid--4-cols-footer {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        display: grid;
+    }
+
+    .footer-leftpart {
+        padding-top: 40px;
+    }
+
+    .footer-leftpart,
+    .footer-callme,
+    .footer-visitus,
+    .footer-startaps {
+        padding-left: 30px;
+        padding-right: 30px;
+        justify-self: flex-start;
+        margin: 0;
+    }
+
+    .footer-startaps {
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    html {
+        font-size: 40%;
+        overflow-x: hidden;
+    }
+
+    .dots {
+        display: none;
+    }
+
+    .hero-more-info {
+        margin-top: 40px;
+    }
+
+    .spot2 {
+        bottom: 20%;
+        left: 60%;
+    }
+
+    .spot3 {
+        top: 10%;
+        right: 29%;
+    }
+
+    .logo {
+        margin-top: 2rem;
+    }
+
+    .step-block,
+    .step-block-right {
+        gap: 40px;
+    }
+
+}
+
+@media (max-width: 340px) {
+
+    html {
+        font-size: 28%;
+        overflow-x: hidden;
+    }
+
+    .logo {
+        margin-top: 5rem;
+    }
+
+}

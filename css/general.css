@@ -1,0 +1,161 @@
+/* @font-face {
+    font-family: 'Fontspring-DEMO-proximanovacond-regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/font/Fontspring-DEMO-proximanova-regular.otf') format("opentype");
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+@import url('http://fonts.cdnfonts.com/css/proxima-nova-2');
+
+body {
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 192rem;
+    padding: 0rem 7.5rem 10rem;
+    margin: 0 auto;
+    background: #FFFEFB;
+}
+
+.container-footer {
+    max-width: 192rem;
+    margin: 0 auto;
+    background: url('/img/footerimg.png') no-repeat center top;
+    background-size: cover;
+}
+
+.container:not(:first-child) {
+    padding-top: 10rem;
+}
+
+.grid {
+    display: grid;
+    column-gap: 3rem;
+    row-gap: 3rem;
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--4-cols-footer {
+    display: grid;
+    grid-template-columns: 27.4% 26% 18% 28.6%;
+}
+
+.grid--6-cols {
+
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.grid--center-v {
+    align-items: center;
+}
+
+h1 {
+    font-size: 9rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110%;
+    margin-bottom: 16px;
+}
+
+.test {
+    font-family: Proxima Nova;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110%;
+}
+
+h2 {
+    font-size: 4.4rem;
+    font-weight: 800;
+    margin-bottom: 5rem;
+}
+
+.company-bold-text {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%
+}
+
+.company-bold-text600 {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%
+}
+
+.span-bold-text {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%
+}
+
+.p-standart-text {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%
+}
+
+.marg50 {
+    margin-top: 50px;
+}
+
+.btn {
+    background-color: #F4F4F4;
+    border: none;
+    height: 53px;
+    width: 56px;
+    position: absolute;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn--left {
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn--right {
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+.relpos {
+    position: relative;
+}
